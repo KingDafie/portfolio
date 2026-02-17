@@ -251,10 +251,16 @@
       const span = document.getElementsByClassName('close')[0];
   
       // Open modal
-      btn.onclick = () => modal.classList.add('show'), modal.style.display = 'flex';
+      btn.onclick = () => {
+        modal.classList.add('show'); 
+        modal.style.display = 'flex';
+      }
   
       // Close modal
-      span.onclick = () => modal.classList.remove('show'), setTimeout(() => modal.style.display = 'none', 300);
+      span.onclick = () => {
+        modal.classList.remove('show'); 
+        setTimeout(() => modal.style.display = 'none', 300);
+      }
   
       // Close when clicking outside
       window.onclick = (e) => {
@@ -270,3 +276,4 @@
 
 
 </html>
+
